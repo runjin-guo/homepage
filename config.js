@@ -4,19 +4,14 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 const USER_CONFIG = {
-  name:       "Your Name",
-  initials:   "YN",
-  role:       "PhD Candidate",
-  university: "Your University",
-  email:      "your.email@university.edu",
-  bio:        "Exploring the frontiers of your research area, machine learning, and artificial intelligence. Building intelligent systems that advance scientific discovery.",
+  name:       "Runjin Guo",
+  initials:   "RG",
+  role:       "PhD Student",
+  university: "The Hong Kong University of Science and Technology (HKUST)",
+  email:      "runjin.guo@connect.ust.hk",
+  bio:        "My research interests lie at the intersection of strategy, innovation, and organizational theory. More specifically, I am interested in how organizations and individuals are influenced by and react to societal and technological changes, and I explore these topics through the theoretical lens of institutional theory, gender, social evaluation, and ecosystems.",
   photo:      "",   // optional: path to your photo, e.g. "assets/photo.jpg"
 
-  stats: [
-    { value: "10+",  label: "Publications" },
-    { value: "200+", label: "Citations" },
-    { value: "5+",   label: "Projects" },
-  ],
 
   links: {
     scholar: "https://scholar.google.com/",
