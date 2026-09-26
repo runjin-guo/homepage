@@ -169,11 +169,6 @@ img {
 
 .nav-logo:hover { border-bottom: none; }
 
-.logo-bracket {
-    color: var(--text-muted);
-    font-weight: 400;
-}
-
 .logo-text {
     color: var(--text-primary);
 }
@@ -243,7 +238,7 @@ img {
 [data-theme="dark"] .theme-label::after { content: ''; }
 
 /* ========================================
-   Hero - 去掉光晕和网格
+   Hero
    ======================================== */
 
 .hero {
@@ -261,12 +256,10 @@ img {
     z-index: 0;
 }
 
-/* 移除网格背景 */
 .grid-overlay {
     display: none;
 }
 
-/* 移除渐变光晕 */
 .gradient-orb {
     display: none;
 }
@@ -280,7 +273,7 @@ img {
     margin: 0 auto;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr 380px;  /* 右侧列加宽，给大照片留空间 */
     gap: var(--space-2xl);
     align-items: center;
     background: var(--bg-card);
@@ -327,34 +320,6 @@ img {
 .highlight {
     color: var(--text-primary);
     font-weight: 600;
-}
-
-.hero-stats {
-    display: flex;
-    gap: var(--space-xl);
-    margin-bottom: var(--space-xl);
-}
-
-.stat {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-.stat-number {
-    font-family: var(--font-display);
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    letter-spacing: -0.02em;
-}
-
-.stat-label {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
 }
 
 .hero-cta {
@@ -408,12 +373,19 @@ img {
 }
 
 .image-frame {
-    width: 240px;
-    height: 280px;
+    width: 360px;        /* 原 320px，改大 */
+    height: 420px;       /* 原 380px，改大 */
     border-radius: var(--radius-lg);
     overflow: hidden;
     background: var(--bg-tertiary);
     border: 1px solid var(--border-color);
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .image-placeholder {
@@ -778,7 +750,7 @@ img {
 }
 
 /* ========================================
-   Scroll Animations - 减弱
+   Scroll Animations
    ======================================== */
 
 .scroll-animate {
@@ -867,10 +839,6 @@ img {
         max-width: 100%;
     }
 
-    .hero-stats {
-        justify-content: center;
-    }
-
     .hero-cta {
         justify-content: center;
         flex-wrap: wrap;
@@ -881,8 +849,8 @@ img {
     }
 
     .image-frame {
-        width: 180px;
-        height: 210px;
+        width: 240px;    /* 原 180px，改大 */
+        height: 280px;   /* 原 210px，改大 */
     }
 
     .section {
