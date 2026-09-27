@@ -317,6 +317,13 @@ img {
     margin-bottom: var(--space-xl);
 }
 
+.hero-description p {
+    margin-bottom: 1em;
+}
+.hero-description p:last-child {
+    margin-bottom: 0;
+}
+
 .highlight {
     color: var(--text-primary);
     font-weight: 600;
